@@ -38,6 +38,10 @@ console.log("MyCar2", myCar2);
 
 // Pour une copie propre:
 const carCopie = Object.assign({}, myCar);
+
+// Pour une copie propre avec 'sucre syntaxique'
+const carCopie2 = { ...myCar };
+
 console.log(carCopie);
 myCar.year = 2020;
 console.log(carCopie);
